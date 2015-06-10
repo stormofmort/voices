@@ -1,0 +1,136 @@
+@charset "utf-8";
+#normalTextRight {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: right;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	width: 200px;
+}
+#userInput {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #666666;
+	padding: 2px;
+	margin: 2px;
+	width: 400px;
+}
+#day {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-align: center;
+	margin: 2px;
+	padding: 2px;
+	width: 20px;
+	font-style: italic;
+}
+#year {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #666666;
+	padding: 2px;
+	margin: 2px;
+	width: 50px;
+	text-align: center;
+}
+#sex {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #666666;
+	padding: 2px;
+	margin: 2px;
+	width: 100px;
+}
+#styleList {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #666666;
+	padding: 2px;
+	margin: 2px;
+	width: 150px;
+}
+
+#monthList {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #666666;
+	padding: 2px;
+	margin: 2px;
+	width: 100px;
+}
+#help a {
+	background-image: url(../images/help.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 20px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-decoration: none;
+	display: block;
+	vertical-align: middle;
+}
+#help a:hover {
+	text-decoration: none;
+	display: block;
+}
+#error {
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 20px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-decoration: none;
+	display: block;
+	vertical-align: middle;
+}
+#error a {
+	background-image: url(../images/hairaanMark.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 20px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-decoration: none;
+	display: block;
+	vertical-align: middle;
+}
+#error  a:hover {
+	text-decoration: none;
+	display: block;
+}
+#currentAvatar {
+	background-color: #64A2FF;
+	border: 2px solid #0099FF;
+}

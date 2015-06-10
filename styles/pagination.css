@@ -1,0 +1,140 @@
+@charset "utf-8";
+#currNumber {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
+	height: 15px;
+	width: 15px;
+}
+#pagination a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	height: 15px;
+	width: 15px;
+	background-color: #FF6600;
+	font-size: 12px;
+}
+#pagination a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FF6600;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	height: 15px;
+	width: 15px;
+	background-color: #FFFFFF;
+	font-size: 12px;
+}
+#firstPage {
+	background-image: url(../images/First.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#firstPage a {
+	background-image: url(../images/First.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#firstPage a:hover {
+	background-image: url(../images/First.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#prevPage {
+	background-image: url(../images/Prev_0.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#prevPage a {
+	background-image: url(../images/Prev_1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#prevPage a:hover {
+	background-image: url(../images/Prev_2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#nextPage {
+	background-image: url(../images/Next_0.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#nextPage a {
+	background-image: url(../images/Next_1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#nextPage a:hover {
+	background-image: url(../images/Next_2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#lastPage {
+	background-image: url(../images/Last.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#lastPage a {
+	background-image: url(../images/Last.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}
+#lastPage a:hover {
+	background-image: url(../images/Last.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+}

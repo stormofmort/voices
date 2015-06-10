@@ -1,0 +1,145 @@
+@charset "utf-8";
+#msgNavInbox_inactive a {
+	text-decoration: none;
+	background-image: url(../images/messageImages/inbox_inactive.jpg);
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+#msgNavInbox_active {
+	text-decoration: none;
+	background-image: url(../images/messageImages/inbox_active.jpg);
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+#msgNavOutbox_inactive a {
+	text-decoration: none;
+	background-image: url(../images/messageImages/outbox_inactive.jpg);
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+#msgNavOutbox_active {
+	text-decoration: none;
+	background-image: url(../images/messageImages/outbox_active.jpg);
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+#msgNavWrite_inactive a {
+	text-decoration: none;
+	background-image: url(../images/messageImages/write_inactive.jpg);
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+#msgNavWrite_active {
+	text-decoration: none;
+	background-image: url(../images/messageImages/write_active.jpg);
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+#msgNavTrash_inactive a {
+	text-decoration: none;
+	background-image: url(../images/messageImages/trash_inactive.jpg);
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+#msgNavTrash_active {
+	text-decoration: none;
+	background-image: url(../images/messageImages/trash_active.jpg);
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+#msgHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: #343434;
+	text-align: center;
+	height: 30px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border: 1px solid #FFFFFF;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#msgField {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #DFDFDF;
+	text-align: left;
+	height: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border: 1px solid #FFFFFF;
+}
+#msgField a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#msgField a:hover {
+	background-color: #999999;
+}
+#msgBlueLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #0066FF;
+	text-decoration: none;
+	text-align: center;
+}
+#msgBlueLink a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #0066FF;
+	text-decoration: none;
+}
+#msgBlueLink a:hover{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #0066FF;
+	text-decoration: underline;
+}
+#msgCommonTable {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#messagePane {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	background-color: #E3F0FF;
+	padding: 5px;
+	border: 1px solid #A6A6A6;
+}
+#otherUserTable {
+	border: 1px solid #A6A6A6;
+	width: 500px;
+}
+#msgAction {
+	text-align: center;
+	color: #0066FF;
+}
+#msgAction a {
+	color: #0066FF;
+	text-decoration: none;
+	display: inline-block;
+}
+#msgAction a:hover {
+	text-decoration: underline;
+}
+#msgActionPic {
+	text-align: center;
+	vertical-align: middle;
+}

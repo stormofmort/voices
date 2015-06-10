@@ -1,0 +1,23 @@
+#announceHeading {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	color: #FFFFFF;
+	font-variant: small-caps;
+	background-color: #637C9C;
+	padding: 2px;
+	border: 2px solid #4B6078;
+	text-align: left;
+}
+#announceText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-left: 10px;
+	color: #333333;
+	text-align: justify;
+}
+#announceTime {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-size: 12px;
+	padding-left: 10px;
+	text-align: left;
+}

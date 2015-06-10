@@ -1,0 +1,5 @@
+0 - No Prob
+1 - empty
+2 - too short/short
+3 - invalid char
+4 - username exist

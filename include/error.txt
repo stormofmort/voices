@@ -1,0 +1,12 @@
+1 - Connection Errors
+	1.1 - Could not connect to database
+	1.2 - Could not find database
+
+2 - Login Errors
+	2.1 - Username or Password not set
+	2.2 - Invalid Username or Password
+
+3 - Logout
+	3.1 - Logged out
+	3.2 - Already Logged out
+	

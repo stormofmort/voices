@@ -1,0 +1,44 @@
+@charset "utf-8";
+#mainCat {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	display: table-cell;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#mainCat a {
+	font-size: 10px;
+	color: #03C2F2;
+	line-height: normal;
+	text-decoration: none;
+}
+#mainCat a:hover {
+	font-size: 10px;
+	color: #03C2F2;
+	line-height: normal;
+	text-decoration: underline;
+}
+#catSub {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#catSub a {
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#catSub a:hover {
+	text-decoration: underline overline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#row {
+	display: table-row;
+}

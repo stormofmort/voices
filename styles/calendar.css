@@ -1,0 +1,76 @@
+#no_link {
+	text-align: center;
+	background-image: url(../images/corners_and_lines/calendar_up.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 0px;
+	height: 23px;
+	width: 34px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+#link {
+	text-align: center;
+	background-image: url(../images/corners_and_lines/calendar_hover.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 0px;
+	height: 23px;
+	width: 34px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#link a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+}
+#link a:hover {
+	color: #FF6600;
+	text-decoration: underline;
+	display: block;
+}
+#blank {
+	text-align: center;
+	height: 23px;
+	width: 34px;
+	padding: 0px;
+}
+#calendar_days {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-align: center;
+}
+body {
+	margin: 0px;
+	background-color:#2A2A2A;
+}
+#monthList {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	width: 100px;
+	border: 1px solid #333333;
+}
+#yearInput {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	width: 40px;
+	border: 1px solid #333333;
+	text-align: center;
+}
+#submitClass {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF9900;
+	border: 1px solid #333333;
+	background-color: #000000;
+}
+#changeDate {
+	text-align: center;
+}

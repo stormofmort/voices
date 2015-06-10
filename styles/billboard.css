@@ -1,0 +1,57 @@
+#billboard {
+	text-align: justify;
+	vertical-align: top;
+	padding-top: 5px;
+	padding-left: 5px;
+	background-color: #FFFFFF;
+}
+#billboardHeading {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FF6600;
+	font-weight: bolder;
+	text-align: left;
+	text-transform: uppercase;
+}
+#smallGreyHeading {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #515151;
+	font-weight: bold;
+	text-transform: capitalize;
+	width: 100px;
+}
+#billboardText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: left;
+}
+#billboardUserName {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #6038C7;
+	font-weight: bold;
+	text-align: left;
+}
+#billboardLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #0066FF;
+	text-align: center;
+	text-decoration: none;
+}
+#billboardLink a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #0066FF;
+	text-align: center;
+	text-decoration: none;
+}
+#billboardLink a:hover {
+	text-decoration: underline;
+}
+#userAvatar {
+	padding-left: 10px;
+}

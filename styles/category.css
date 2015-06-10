@@ -1,0 +1,51 @@
+#categoryName {
+	height: 200px;
+	width: 30px;
+}
+#categoryImage {
+	height: 200px;
+	width: 170px;
+}
+#featureDetails {
+	color: #333333;
+}
+#featureTitle  {
+	color: #4478E5;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: capitalize;
+	padding-top: 10px;
+}
+#readArticle a {
+	color: #0066FF;
+	font-size: 10px;
+	text-decoration: none;
+}
+#readArticle a:hover {
+	text-decoration: underline;
+}
+#readComment {
+	color: #0066FF;
+	font-size: 10px;
+}
+#articleContainer {
+	width:100%;
+	padding-top: 15px;
+}
+#articleTitle a {
+	color: #4478E5;
+	font-weight: bold;
+	width: 100%;
+	text-transform: uppercase;
+}
+#articleTitle  a:hover {
+	font-variant: inherit;
+	color: #999999;
+	font-weight: bold;
+}
+#articleSummary {
+	vertical-align: top;
+	padding-right: 5px;
+	padding-top: 5px;
+	text-align: justify;
+}

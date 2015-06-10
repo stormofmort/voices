@@ -1,0 +1,86 @@
+#articleTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #AA0000;
+	text-align: left;
+}
+#articleText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	padding-top: 10px;
+	line-height: 17px;
+	padding-right: 5px;
+	padding-left: 5px;
+	vertical-align: top;
+}
+#detailBox {
+	display: block;
+	vertical-align: top;
+	float: right;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	background-color: #FFFFFF;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+}
+#thumb {
+	margin-right: 5px;
+	border: 2px solid #000000;
+}
+#category {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: capitalize;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	padding-bottom: 5px;
+}
+#category a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FF6600;
+	text-decoration: none;
+}
+#commentContainer {
+	padding-bottom: 20px;
+}
+#quotedText {
+	background-color: #FFFFFF;
+	padding: 5px;
+	border: 1px solid #A6A6A6;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	vertical-align: top;
+	margin-left: 25px;
+}
+
+#commentText {
+	background-color: #E3F0FF;
+	padding: 5px;
+	border: 1px solid #A6A6A6;
+	vertical-align: top;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+}
+#userArea {
+	text-align: center;
+	vertical-align: top;
+	width: 100px;
+}

@@ -1,0 +1,257 @@
+MICROSOFT SOFTWARE LICENSE TERMS
+MICROSOFT EXPRESSION WEB 
+ 
+Below are three separate sets of License Terms.  Only one set applies to you.  If this software is a language pack for Microsoft Expression Web, then the Language Pack License Terms below apply to you.  If you received the software pre-installed on a hardware device, then the OEM License Terms below apply to you.  Otherwise, the Retail License Terms below apply to you.  
+
+1.  RETAIL LICENSE TERMS
+These license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you.  Please read them.  They apply to the software named above, which includes the media on which you received it, if any.  The terms also apply to any Microsoft
+
+• updates, 
+• supplements, 
+• Internet-based services, and
+• support services
+
+for this software, unless other terms accompany those items.  If so, those terms apply.
+
+BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.  IF YOU DO NOT ACCEPT THEM, DO NOT USE THE SOFTWARE.  INSTEAD, RETURN IT TO THE RETAILER FOR A REFUND OR CREDIT.  If you cannot obtain a refund there, contact Microsoft or the Microsoft affiliate serving your country for information about Microsoft’s refund policies.  See www.microsoft.com/worldwide.  In the United States and Canada, call (800) MICROSOFT or see www.microsoft.com/mscorp/productrefund/refund.asp.
+
+IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW FOR EACH LICENSE YOU ACQUIRE.
+
+1. OVERVIEW.
+   a. Software.  The software includes development tools, software programs and documentation.
+   b. License Model.  The software is licensed on a per user basis.
+
+2. PRODUCT IDENTIFICATION KEYS.  The software requires a key to install or access it.  You are responsible for the use of keys assigned to you.  You should not share the keys with third parties. 
+
+3. INSTALLATION AND USE RIGHTS
+   a. General.  One user may install and use copies of the software to design, develop, test and demonstrate web sites you develop.  
+   b. Included Microsoft Programs.  These license terms apply to all Microsoft programs included with the software.  If the license terms with any of those programs give you other rights that do not expressly conflict with these license terms, you also have those rights.
+
+4. ADDITIONAL LICENSING REQUIREMENTS AND/OR USE RIGHTS.
+   a. Content Files.  The software contains code that you are permitted to incorporate into web sites you develop if you comply with the terms below.
+
+      i. Right to Use and Sublicense.  The items listed below are “Content Files.”
+       • Templates.  The software includes web site design templates.  You may copy, modify and incorporate the templates into the web sites you develop.
+
+       • Sample Code. You may copy, modify, and incorporate into your web sites the source and object code form of code marked as “Code Snippets”.
+	
+You may permit the owners of the web sites you develop to use any Content Files as part of those web sites.  A web hosting service provider’s caching of the Content Files as part of those web sites is also permitted.
+
+     ii. Sublicense Requirements.  For any Content Files you incorporate into a website, you must
+       • display your valid copyright notice on your web sites; and
+       • indemnify, defend, and hold harmless Microsoft from any claims, including attorneys’ fees, from third parties related to your incorporation into such web site, or modification, of the Content Files.
+
+    iii. Sublicense Restrictions.  You may not
+       • alter any copyright, trademark or patent notice in the Content Files;
+       • use Microsoft’s trademarks in your web sites  or in a way that suggests your web site services or software come from or are endorsed by Microsoft;
+       • include Content Files in malicious, deceptive or unlawful websites; 
+       • create or design obscene or scandalous web sites with the software as defined by federal law at the time the web site was created or designed; or
+       • modify or distribute the source code of any Content Files so that any part of it becomes subject to an Excluded License.  An Excluded License is one that requires, as a condition of use, modification or distribution, that
+       • the code be disclosed or distributed in source code form; or
+       • others have the right to modify it.
+
+5.  TRIAL AND CONVERSION.  Some or all of the software may be licensed on a trial basis.  Your rights to use trial software are limited to the trial period.  The trial software and length of the trial period are set forth during the activation process.  You may have the option to convert your trial rights to subscription or perpetual rights.  Conversion options will be presented to you at the expiration of your trial period.  After the expiration of any trial period without conversion, most features of the trial software will stop running.  At that time you can continue to open, view and print any documents you created with the trial software.
+
+6. INTERNET-BASED SERVICES.  Microsoft provides Internet-based services with the software.  It may change or cancel them at any time.  You may not use these services in any way that could harm them or impair anyone else’s use of them.  You may not use the services to try to gain unauthorized access to any service, data, account or network by any means.
+
+7. SCOPE OF LICENSE.  The software is licensed, not sold. This agreement only gives you some rights to use the software.  Microsoft reserves all other rights.  Unless applicable law gives you more rights despite this limitation, you may use the software only as expressly permitted in this agreement.  In doing so, you must comply with any technical limitations in the software that only allow you to use it in certain ways.  For more information, see www.microsoft.com/licensing/userights.  You may not
+
+       • work around any technical limitations in the software;
+       • reverse engineer, decompile or disassemble the software, except and only to the extent that applicable law expressly permits, despite this limitation;
+       • make more copies of the software than specified in this agreement or allowed by applicable law, despite this limitation;
+       • publish the software for others to copy;
+       • rent, lease or lend the software; 
+       • use the software for commercial software hosting services;
+       • modify the software (except for the Content Files); or  
+       • distribute the software (except for the Content Files).
+
+8. BACKUP COPY.  You may make one backup copy of the software.  You may use it only to reinstall the software.
+
+9. DOCUMENTATION.  Any person that has valid access to your computer or internal network may copy and use the documentation for your internal, reference purposes.
+
+10. ACADEMIC EDITION SOFTWARE.  You must be a “Qualified Educational User” to use software marked as “Academic Edition” or “AE.”   If you do not know whether you are a Qualified Educational User, visit www.microsoft.com/education or contact the Microsoft affiliate serving your country.
+
+11. PROOF OF LICENSE.  If you acquired the software on a disc or other media, a genuine Microsoft Proof of License label with a genuine copy of the software identifies licensed software.  To be valid, this label must appear on Microsoft packaging.  If you receive the label separately, it is invalid. You should keep the packaging that has the label on it to prove that you are licensed to use the software.  To identify genuine Microsoft software, see www.howtotell.com.
+
+12. TRANSFER TO A THIRD PARTY.  The first user of the software may transfer it, and this agreement, directly to a third party.  Before the transfer, that party must agree that this agreement applies to the transfer and use of the software.  The transfer must include the software and the Proof of License label.  The first user must uninstall the software before transferring it separately from the device.  The first user may not retain any copies.
+
+13. EXPORT RESTRICTIONS.  The software is subject to United States export laws and regulations.  You must comply with all domestic and international export laws and regulations that apply to the software.  These laws include restrictions on destinations, end users and end use.  For additional information, see www.microsoft.com/exporting.
+
+14. SUPPORT SERVICES.  Microsoft provides support services for the software as described at www.support.microsoft.com/common/international.aspx.
+
+15. ENTIRE AGREEMENT.  This agreement (including the warranty below), and the terms for supplements, updates, Internet-based services and support services that you use, are the entire agreement for the software and support services.
+
+16. APPLICABLE LAW.
+   a. United States.  If you acquired the software in the United States, Washington state law governs the interpretation of this agreement and applies to claims for breach of it, regardless of conflict of laws principles.  The laws of the state where you live govern all other claims, including claims under state consumer protection laws, unfair competition laws, and in tort.
+   b. Outside the United States.  If you acquired the software in any other country, the laws of that country apply.
+
+17. LEGAL EFFECT.  This agreement describes certain legal rights.  You may have other rights under the laws of your state or country.  You may also have rights with respect to the party from whom you acquired the software.  This agreement does not change your rights under the laws of your state or country if the laws of your state or country do not permit it to do so.
+
+18. LIMITATION ON AND EXCLUSION OF DAMAGES.  YOU CAN RECOVER FROM MICROSOFT AND ITS SUPPLIERS ONLY DIRECT DAMAGES UP TO THE AMOUNT YOU PAID FOR THE SOFTWARE. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT OR INCIDENTAL DAMAGES.
+This limitation applies to
+
+      • anything related to the software, services, content (including code) on third party Internet sites, or third party programs; and
+      • claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.
+
+It also applies even if
+      • repair, replacement or a refund for the software does not fully compensate you for any losses; or
+      • Microsoft knew or should have known about the possibility of the damages.
+Some states do not allow the exclusion or limitation of incidental or consequential damages, so the above limitation or exclusion may not apply to you.  They also may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages. 
+
+**************************************************************************************
+LIMITED WARRANTY
+
+A. LIMITED WARRANTY.  If you follow the instructions, the software will perform substantially as described in the Microsoft materials that you receive in or with the software.
+
+B. TERM OF WARRANTY; WARRANTY RECIPIENT; LENGTH OF ANY IMPLIED WARRANTIES.  THE LIMITED WARRANTY COVERS THE SOFTWARE FOR ONE YEAR AFTER ACQUIRED BY THE FIRST USER.  IF YOU RECEIVE SUPPLEMENTS, UPDATES, OR REPLACEMENT SOFTWARE DURING THAT YEAR, THEY WILL BE COVERED FOR THE REMAINDER OF THE WARRANTY OR 30 DAYS, WHICHEVER IS LONGER.  If the first user transfers the software, the remainder of the warranty will apply to the recipient.
+
+TO THE EXTENT PERMITTED BY LAW, ANY IMPLIED WARRANTIES, GUARANTEES OR CONDITIONS LAST ONLY DURING THE TERM OF THE LIMITED WARRANTY.  Some states do not allow limitations on how long an implied warranty lasts, so these limitations may not apply to you.  They also might not apply to you because some countries may not allow limitations on how long an implied warranty, guarantee or condition lasts.
+
+C. EXCLUSIONS FROM WARRANTY.  This warranty does not cover problems caused by your acts (or failures to act), the acts of others, or events beyond Microsoft’s reasonable control.
+
+D. REMEDY FOR BREACH OF WARRANTY.  MICROSOFT WILL REPAIR OR REPLACE THE SOFTWARE AT NO CHARGE.  IF MICROSOFT CANNOT REPAIR OR REPLACE IT, MICROSOFT WILL REFUND THE AMOUNT SHOWN ON YOUR RECEIPT FOR THE SOFTWARE.  IT WILL ALSO REPAIR OR REPLACE SUPPLEMENTS, UPDATES AND REPLACEMENT SOFTWARE AT NO CHARGE.  IF MICROSOFT CANNOT REPAIR OR REPLACE THEM, IT WILL REFUND THE AMOUNT YOU PAID FOR THEM, IF ANY.  YOU MUST UNINSTALL THE SOFTWARE AND RETURN ANY MEDIA AND OTHER ASSOCIATED MATERIALS TO MICROSOFT WITH PROOF OF PURCHASE TO OBTAIN A REFUND.  THESE ARE YOUR ONLY REMEDIES FOR BREACH OF THE LIMITED WARRANTY.
+
+E. CONSUMER RIGHTS NOT AFFECTED.  YOU MAY HAVE ADDITIONAL CONSUMER RIGHTS UNDER YOUR LOCAL LAWS, WHICH THIS AGREEMENT CANNOT CHANGE.
+
+F. WARRANTY PROCEDURES.  You need proof of purchase for warranty service.
+
+   1. United States and Canada.  For warranty service or information about how to obtain a refund for software acquired in the United States and Canada, contact Microsoft at
+• (800) MICROSOFT;
+• Microsoft Customer Service and Support, One Microsoft Way, Redmond, WA 98052-6399; or
+• visit www.microsoft.com/mscorp/productrefund/refund.asp.
+
+   2. Europe, Middle East and Africa.  If you acquired the software in Europe, the Middle East or Africa, Microsoft Ireland Operations Limited makes this limited warranty.  To make a claim under this warranty, you should contact either
+• Microsoft Ireland Operations Limited, Customer Care Centre, Atrium Building Block B, Carmanhall Road, Sandyford Industrial Estate, Dublin 18, Ireland; or
+• the Microsoft affiliate serving your country (see www.microsoft.com/worldwide).
+
+   3. Outside United States, Canada, Europe, Middle East and Africa.  If you acquired the software outside the United States, Canada, Europe, the Middle East and Africa, contact the Microsoft affiliate serving your country (see www.microsoft.com/worldwide).
+
+G. NO OTHER WARRANTIES.  THE LIMITED WARRANTY IS THE ONLY DIRECT WARRANTY FROM MICROSOFT.  MICROSOFT GIVES NO OTHER EXPRESS WARRANTIES, GUARANTEES OR CONDITIONS.  WHERE ALLOWED BY YOUR LOCAL LAWS, MICROSOFT EXCLUDES IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  If your local laws give you any implied warranties, guarantees or conditions, despite this exclusion, your remedies are described in the Remedy for Breach of Warranty clause above, to the extent permitted by your local laws.
+
+H. LIMITATION ON AND EXCLUSION OF DAMAGES FOR BREACH OF WARRANTY.  THE LIMITATION ON AND EXCLUSION OF DAMAGES CLAUSE ABOVE APPLIES TO BREACHES OF THIS LIMITED WARRANTY.
+THIS WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY FROM STATE TO STATE.  YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY FROM COUNTRY TO COUNTRY. 
+
+2.  OEM LICENSE TERMS
+These license terms are an agreement between you and the device manufacturer that distributes the software with the device, or the software installer that distributes the software with the device.  Please read them.  They apply to the software named above, which includes the media on which you received it, if any.  Printed paper license terms, which may come with the software, take the place of any on-screen license terms.  The terms also apply to any Microsoft
+
+• updates, 
+• supplements, 
+• Internet-based services, and
+• support services
+
+for this software, unless other terms accompany those items.  If so, those terms apply.  If you obtain updates or supplements directly from Microsoft, then these terms apply except that Microsoft, not the manufacturer or installer, licenses those to you.
+
+BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.  IF YOU DO NOT ACCEPT THEM, DO NOT USE THE SOFTWARE.  INSTEAD, CONTACT THE MANUFACTURER OR INSTALLER TO DETERMINE THEIR RETURN POLICY FOR A REFUND OR CREDIT.
+
+IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW FOR EACH LICENSE YOU ACQUIRE.
+
+1. OVERVIEW.
+   a. Software.  The software includes development tools, software programs and documentation.
+   b. License Model.  The software is licensed on a per user basis.
+
+2. PRODUCT IDENTIFICATION KEYS.  The software requires a key to install or access it.  You are responsible for the use of keys assigned to you.  You should not share the keys with third parties. 
+
+3. INSTALLATION AND USE RIGHTS
+   a. General.  One user may install and use copies of the software to design, develop, test and demonstrate web sites you develop.  
+   b. Included Microsoft Programs.  These license terms apply to all Microsoft programs included with the software.  If the license terms with any of those programs give you other rights that do not expressly conflict with these license terms, you also have those rights.
+
+4. ADDITIONAL LICENSING REQUIREMENTS AND/OR USE RIGHTS.
+   a. Content Files.  The software contains code that you are permitted to incorporate into web sites you develop if you comply with the terms below.
+
+      i. Right to Use and Sublicense.  The items listed below are “Content Files.”
+       • Templates.  The software includes web site design templates.  You may copy, modify and incorporate the templates into the web sites you develop.
+
+       • Sample Code. You may copy, modify, and incorporate into your web sites the source and object code form of code marked as “Code Snippets”.
+	
+You may permit the owners of the web sites you develop to use any Content Files as part of those web sites.  A web hosting service provider’s caching of the Content Files as part of those web sites is also permitted.
+
+     ii. Sublicense Requirements.  For any Content Files you incorporate into a website, you must
+       • display your valid copyright notice on your web sites; and
+       • indemnify, defend, and hold harmless Microsoft from any claims, including attorneys’ fees, from third parties related to your incorporation into such web site, or modification, of the Content Files.
+
+    iii. Sublicense Restrictions.  You may not
+       • alter any copyright, trademark or patent notice in the Content Files;
+       • use Microsoft’s trademarks in your web sites  or in a way that suggests your web site services or software come from or are endorsed by Microsoft;
+       • include Content Files in malicious, deceptive or unlawful websites; 
+       • create or design obscene or scandalous web sites with the software as defined by federal law at the time the web site was created or designed; or
+       • modify or distribute the source code of any Content Files so that any part of it becomes subject to an Excluded License.  An Excluded License is one that requires, as a condition of use, modification or distribution, that
+       • the code be disclosed or distributed in source code form; or
+       • others have the right to modify it.
+
+       b.  Language Version Selection.  If the computer manufacturer provides you with a one-time selection between language versions, you may use only the one language version you select.  If the computer manufacturer provides you with a “MLP” or “LIP”, your use of language versions is not limited.  A “MLP” is a Multi-language Pack.  A “LIP” is a Language Interface Pack.  MLPs and LIPs offer additional language version support of the software. The MLP and LIP are a part of the software, and may not be used separately.
+
+5.  TRIAL AND CONVERSION.  Some or all of the software may be licensed on a trial basis.  Your rights to use trial software are limited to the trial period.  The trial software and length of the trial period are set forth during the activation process.  You may have the option to convert your trial rights to subscription or perpetual rights.  Conversion options will be presented to you at the expiration of your trial period.  After the expiration of any trial period without conversion, most features of the trial software will stop running.  At that time you can continue to open, view and print any documents you created with the trial software.
+
+6. INTERNET-BASED SERVICES.  Microsoft provides Internet-based services with the software.  It may change or cancel them at any time.  You may not use these services in any way that could harm them or impair anyone else’s use of them.  You may not use the services to try to gain unauthorized access to any service, data, account or network by any means.
+
+7. SCOPE OF LICENSE.  The software is licensed, not sold. This agreement only gives you some rights to use the software.  The manufacturer or installer and Microsoft reserve all other rights.  Unless applicable law gives you more rights despite this limitation, you may use the software only as expressly permitted in this agreement.  In doing so, you must comply with any technical limitations in the software that only allow you to use it in certain ways.  For more information, see the software documentation.  You may not
+
+       • work around any technical limitations in the software;
+       • reverse engineer, decompile or disassemble the software, except and only to the extent that applicable law expressly permits, despite this limitation;
+       • make more copies of the software than specified in this agreement or allowed by applicable law, despite this limitation;
+       • publish the software for others to copy;
+       • rent, lease or lend the software; 
+       • use the software for commercial software hosting services;
+       • modify the software (except for the Content Files); or  
+       • distribute the software (except for the Content Files).
+
+8. BACKUP COPY.  You may make one backup copy of the software media.  You may use it only to reinstall the software.
+
+9. DOCUMENTATION.  Any person that has valid access to your computer or internal network may copy and use the documentation for your internal, reference purposes.
+
+10. ACADEMIC EDITION SOFTWARE.  You must be a “Qualified Educational User” to use software marked as “Academic Edition” or “AE.”   If you do not know whether you are a Qualified Educational User, visit www.microsoft.com/education or contact the Microsoft affiliate serving your country.
+
+11. PROOF OF LICENSE.  If you acquired the software on a disc or other media, a genuine Microsoft Proof of License label with a genuine copy of the software identifies licensed software.  To be valid, this label must be affixed to the device or appear on the manufacturer’s or installer’s packaging.  If you receive the label separately, it is invalid. You should keep the label on the device or packaging to prove that you are licensed to use the software.
+
+12. TRANSFER TO A THIRD PARTY.  The first user of the software may transfer it, and this agreement, directly to a third party.  Before the transfer, that party must agree that this agreement applies to the transfer and use of the software.  The transfer must include the software and the Proof of License label.  The first user must uninstall the software before transferring it separately from the device.  The first user may not retain any copies.  
+
+13. EXPORT RESTRICTIONS.  The software is subject to United States export laws and regulations.  You must comply with all domestic and international export laws and regulations that apply to the software.  These laws include restrictions on destinations, end users and end use.  For additional information, see www.microsoft.com/exporting.
+
+14. SUPPORT SERVICES.  For the software generally, contact the manufacturer or installer for support options.  Refer to the support number provided with the software.  For updates and supplements obtained directly from Microsoft, Microsoft provides support as described at www.support.microsoft.com/common/international.aspx.
+
+15. ENTIRE AGREEMENT.  This agreement (including the warranty below), and the terms for supplements, updates, Internet-based services and support services that you use, are the entire agreement for the software and support services.
+
+16. APPLICABLE LAW.
+   a. United States.  If you acquired the software in the United States, Washington state law governs the interpretation of this agreement and applies to claims for breach of it, regardless of conflict of laws principles.  The laws of the state where you live govern all other claims, including claims under state consumer protection laws, unfair competition laws, and in tort.
+   b. Outside the United States.  If you acquired the software in any other country, the laws of that country apply.
+
+17. LEGAL EFFECT.  This agreement describes certain legal rights.  You may have other rights under the laws of your state or country.  You may also have rights with respect to the party from whom you acquired the software.  This agreement does not change your rights under the laws of your state or country if the laws of your state or country do not permit it to do so.
+
+18. LIMITATION ON AND EXCLUSION OF DAMAGES.  EXCEPT FOR ANY REFUND THE MANUFACTURER OR INSTALLER MAY PROVIDE, YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT OR INCIDENTAL DAMAGES.
+This limitation applies to
+
+      • anything related to the software, services, content (including code) on third party Internet sites, or third party programs; and
+      • claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.
+
+It also applies even if
+      • repair, replacement or a refund for the software does not fully compensate you for any losses; or
+      • the manufacturer or installer, or Microsoft knew or should have known about the possibility of the damages.
+Some states do not allow the exclusion or limitation of incidental or consequential damages, so the above limitation or exclusion may not apply to you.  They also may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages. 
+
+**************************************************************************************
+LIMITED WARRANTY
+
+A. LIMITED WARRANTY.  If you follow the instructions, the software will perform substantially as described in the Microsoft materials that you receive in or with the software.
+
+B. TERM OF WARRANTY; WARRANTY RECIPIENT; LENGTH OF ANY IMPLIED WARRANTIES.  THE LIMITED WARRANTY COVERS THE SOFTWARE FOR 90 DAYS AFTER ACQUIRED BY THE FIRST USER.  IF YOU RECEIVE SUPPLEMENTS, UPDATES, OR REPLACEMENT SOFTWARE DURING THOSE 90 DAYS, THEY WILL BE COVERED FOR THE REMAINDER OF THE WARRANTY OR 30 DAYS, WHICHEVER IS LONGER.  If you transfer the software, the remainder of the warranty will apply to the recipient.
+
+TO THE EXTENT PERMITTED BY LAW, ANY IMPLIED WARRANTIES, GUARANTEES OR CONDITIONS LAST ONLY DURING THE TERM OF THE LIMITED WARRANTY.  Some states do not allow limitations on how long an implied warranty lasts, so these limitations may not apply to you.  They also might not apply to you because some countries may not allow limitations on how long an implied warranty, guarantee or condition lasts.
+
+C. EXCLUSIONS FROM WARRANTY.  This warranty does not cover problems caused by your acts (or failures to act), the acts of others, or events beyond the reasonable control of the manufacturer or installer, or Microsoft.
+
+D. REMEDY FOR BREACH OF WARRANTY.  THE MANUFACTURER OR INSTALLER WILL, AT ITS ELECTION, EITHER (I) REPAIR OR REPLACE THE SOFTWARE AT NO CHARGE, OR (II) REFUND THE AMOUNT PAID FOR THE PRODUCT, IF ANY.  THE MANUFACTURER OR INSTALLER MAY ALSO REPAIR OR REPLACE SUPPLEMENTS, UPDATES AND REPLACEMENT SOFTWARE, OR PROVIDE A REFUND OF THE AMOUNT YOU PAID FOR THEM, IF ANY; CONTACT THE MANUFACTUERER OR INSTALLER ABOUT ITS POLICY.  THESE ARE YOUR ONLY REMEDIES FOR BREACH OF THE LIMITED WARRANTY.
+
+E. CONSUMER RIGHTS NOT AFFECTED.  YOU MAY HAVE ADDITIONAL CONSUMER RIGHTS UNDER YOUR LOCAL LAWS, WHICH THIS AGREEMENT CANNOT CHANGE.
+
+F. WARRANTY PROCEDURES.  Contact the manufacturer or installer to find out how to obtain warranty service for the software.  For a refund, you must comply with the manufacturer’s or installer’s return policies.
+
+G. NO OTHER WARRANTIES.  THE LIMITED WARRANTY IS THE ONLY DIRECT WARRANTY FROM THE MANUFACTURER OR INSTALLER, OR MICROSOFT.  THE MANUFACTURER OR INSTALLER, AND MICROSOFT GIVE NO OTHER EXPRESS WARRANTIES, GUARANTEES OR CONDITIONS.  WHERE ALLOWED BY YOUR LOCAL LAWS, THE MANUFACTURER OR INSTALLER, AND MICROSOFT EXCLUDE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  If your local laws give you any implied warranties, guarantees or conditions, despite this exclusion, your remedies are described in the remedy for breach of warranty clause above, to the extent permitted by your local laws.
+
+H. LIMITATION ON AND EXCLUSION OF DAMAGES FOR BREACH OF WARRANTY.  THE LIMITATION ON AND EXCLUSION OF DAMAGES CLAUSE ABOVE APPLIES TO BREACHES OF THIS LIMITED WARRANTY.
+THIS WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY FROM STATE TO STATE.  YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY FROM COUNTRY TO COUNTRY. 
+
+3.  LANGUAGE PACK LICENSE TERMS.
+
+If the software is a Language Interface Pack (“LIP”), you may use the LIP with a validly licensed copy of the software.  You may not use the LIP if you do not have a license for the software.  The Retail License Terms or OEM License Terms above apply to your use of the LIP with the software.  The LIP is a part of the software, and may not be used separately. 
+
+EULAID:O12_RTM_EWD.0_ALL_EN
