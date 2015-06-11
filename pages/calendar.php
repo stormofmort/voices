@@ -15,16 +15,21 @@
 
 	$months = array("0", "Januray", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 	
-	if (!$_POST[monthList] || $_POST[monthList] == ""){ 
+	if (!isset($_POST['monthList'])){ 
 		$month = date("n");
 	} else {
-		$month = $_POST[monthList];
+		$month = $_POST['monthList'];
 	}
 
-	if (($_POST[year] > date("Y")) || ($_POST[year] < 2006) || !$_POST[year] || ($_POST[year] == "")) { 
+	if (!isset($_POST['year'])) {
+		
 		$year = date("Y"); 
 	} else {
-		$year = $_POST[year];
+		if (($_POST['year'] > date("Y")) || ($_POST['year'] < 2006)) {
+			$year = date("Y");
+		}else {
+			$year = $_POST['year'];
+		}
 	}
 	
 	function num_of_days() {
@@ -60,25 +65,36 @@
 		
 	function write_calendar($i, $date) {
 		global $year, $month;
-		databaseConnect();
-		$query = "SELECT * FROM articletable WHERE articleApproveDate='$year-$month-$date[$i]'";
-		$result = mysql_query($query);
-		$rows = mysql_num_rows($result);
-		if ($rows > 0) {
-			$format1 = "<td id='link'><a target='_parent' href='../categories.php'>";
-			$format2 = "</a></td>";
-			$echo = $date[$i];
-		} else {
-			$format1 = "<td id='no_link'>";
-			$format2 = "</td>";
-			$echo = $date[$i];
-		}
 		
-		if ($date[$i] <= 0 || $i > count($date)) {
+		if ($i >= count($date)) {
 			$echo = "&nbsp;";
 			$format1 = "<td id='blank'>";
 			$format2 = "</td>";
+		} else {
+			if($date[$i] <= 0) {
+				$echo = "&nbsp;";
+				$format1 = "<td id='blank'>";
+				$format2 = "</td>";
+			} else {
+				databaseConnect();
+				$query = "SELECT * FROM articletable WHERE articleApproveDate='$year-$month-$date[$i]'";
+				//$query = "SELECT * FROM articletable WHERE articleApproveDate='$year-$month'";
+				$result = mysql_query($query);
+				$rows = mysql_num_rows($result);
+				if ($rows > 0) {
+					$format1 = "<td id='link'><a target='_parent' href='../category.php'>";
+					$format2 = "</a></td>";
+					$echo = $date[$i];
+					//$echo = "&nbsp;";
+				} else {
+					$format1 = "<td id='no_link'>";
+					$format2 = "</td>";
+					$echo = $date[$i];
+					//$echo = "&nbsp;";
+				}
+			}
 		}
+		
 		return $output = $format1.$echo.$format2;
 	}
 			
@@ -108,9 +124,13 @@
 				$i++;
 			}
 			echo "</tr>";
-			if ($i >= count($date)) { break; }
+			if ($i >= count($date)) {
+				break; 
+			}
 		};
 		echo "</table>";
+		//echo $start_pos . "-" . $end_pos;
+		//echo count($date);
 	}
 		
 	draw_calendar();
