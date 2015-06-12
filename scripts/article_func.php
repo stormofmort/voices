@@ -82,6 +82,7 @@
 		
 		$query = "SELECT `articleID`, `articleTitle`, `articleText`, UNIX_TIMESTAMP(articleApproveDate) AS `articleApproveDate`, `articleViews`, `articleStatus` FROM `articletable` WHERE `articleID` = $articleID";
 		$result = mysql_query($query);
+		mysql_close($conn);
 		$array = mysql_fetch_assoc($result);
 		$array['articleRating'] = getRating($articleID);
 		$cats = getCategories($articleID);
@@ -91,7 +92,7 @@
 		
 		
 		mysql_free_result($result);
-		mysql_close($conn);
+		
 
 		return $array;
 	}
@@ -164,7 +165,6 @@
 		$query = "UPDATE `articletable` SET `articleViews` = '".$array['articleViews']."' WHERE `articletable`.`articleID` = $articleID LIMIT 1";
 		$result = mysql_query($query);
 
-		mysql_free_result($result);
 		mysql_close($conn);
 	}
 	

@@ -57,6 +57,8 @@
 						$article = readArticle($_GET['articleID']);
 						if ( isset($_SESSION['validuserID']) ) {
 							$isFav = checkIfFav($_SESSION['validuserID'], $_GET['articleID']);
+						} else {
+							$isFav = 0;
 						}
 						if ( $article['articleStatus'] == 1 ) {
 							hit($_GET['articleID']);

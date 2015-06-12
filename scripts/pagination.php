@@ -66,7 +66,7 @@
 		$start = ($currPage - 1) * $showLimit;
 	}
 
-	function drawPagination($begin, $end, $caller, $add) {
+	function drawPagination($begin, $end, $caller, $add=0) {
 		global $numArticles, $numPages, $currPage, $currStart, $catSub, $sortBy, $sortOrder, $showLimit, $searchText, $searchType;
 		echo "<table border='0' cellspacing='2' cellpadding='0' align='center'><tr>";
 		if ( $currPage > 1 ) {

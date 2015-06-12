@@ -19,6 +19,8 @@
 	
 	if ( isset($_GET['catSub']) &&  is_numeric($_GET['catSub']) && ($_GET['catSub'] > 0) ) {
 		$catSub = $_GET['catSub'];
+	} else {
+		$catSub = 1;
 	}
 	
 	if ( isset($_GET['sortBy']) && $_GET['sortBy'] > 0 && $_GET['sortBy'] < 4 ) {

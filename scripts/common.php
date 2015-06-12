@@ -106,6 +106,7 @@
 	}
 	
 	function drawRating($rating) {
+		$i=0;
 		$score = intval( ($rating / 3 ) );
 		while ( $i < 5 ) {
 			if ( $i < $score ) {

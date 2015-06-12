@@ -37,24 +37,23 @@
 	}
 	function getFeature($cat) {
 		$conn = databaseConnect();
+		
 		$query1 = "SELECT `feature` FROM `catsubtable` WHERE `catsubID` = $cat";
 		$result1 = mysql_query($query1, $conn);
 		$array = mysql_fetch_assoc($result1);
 		$feature = $array['feature'];
-		
-		$query2 = "SELECT `articleID`, `articleTitle`, `articleSummary`, UNIX_TIMESTAMP(articleApproveDate) AS `articleApproveDate`, `username`
-								FROM `usertable`, `articletable`
-								WHERE `articleID` = $feature
-									AND `articletable`.`userID` = `usertable`.`userID";
+		$query2 = "SELECT `articleID`, `articleTitle`, `articleSummary`, UNIX_TIMESTAMP(articleApproveDate) AS `articleApproveDate`, `username` FROM `usertable`, `articletable` WHERE `articleID` = ". $feature . " AND `articletable`.`userID` = `usertable`.`userID`"; 
 		$result2 = mysql_query($query2, $conn);
-		$array = mysql_fetch_assoc($result2);
-
-		$array['articleRating'] = getRating($array['articleID']);
-		$array['articleComments'] = countComments($array['articleID']);
-
-		mysql_free_result($result1, $result2);
 		mysql_close($conn);
-		
+		if (mysql_num_rows($result2)>0){
+			$array = mysql_fetch_assoc($result2);
+			$array['articleRating'] = getRating($array['articleID']);
+			$array['articleComments'] = countComments($array['articleID']);
+		} else {
+			$array = [];
+		}
+		mysql_free_result($result1);
+		mysql_free_result($result2);
 		return $array;
 	}
 	
@@ -68,6 +67,7 @@
 								ORDER BY $orderBy $arrange
 								LIMIT $start, $showLimit";
 		$result = mysql_query($query);
+		mysql_close($conn);
 		if ( mysql_num_rows($result) > 0 ) {
 			$stop = mysql_num_rows($result);
 			for ($i = 1; $i <= $stop; $i++) {
@@ -114,6 +114,6 @@
 			echo "No articles were found under that category";
 		}
 		mysql_free_result($result);
-		mysql_close($conn);
+		
 	}
 ?>
