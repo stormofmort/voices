@@ -9,7 +9,7 @@
 				}
 			?>
       <tr>
-        <td id="boldBlackText" colspan="3">General Login Info<a href="pages/regHelp.php?focus=Login"><img style="border:none" src="images/help.jpg"</a></td>
+        <td id="boldBlackText" colspan="3">General Login Info<a href="pages/regHelp.php?focus=Login"><img style="border:none" src="images/help.jpg"></img></a></td>
       </tr>
       <tr>
         <td id="normalTextRight">Username: </td>

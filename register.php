@@ -164,7 +164,7 @@
 		}
 	} else {
 		$workPhoneCheck = 0;
-		$_POST['workPhone'] == NULL;
+		$_POST['workPhone'] = NULL;
 	}
 
 	if ( isset($_POST['mobilePhone']) && $_POST['mobilePhone'] != '' ) {
@@ -179,7 +179,7 @@
 
 	if ( isset($_POST['email']) ) {
 		$emailCheck = check_email($_POST['email']);
-		if ( $email > 0 ) {
+		if ( $emailCheck > 0 ) {
 			++$error;
 		}
 	} else {

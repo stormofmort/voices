@@ -40,9 +40,9 @@
 		$sql = "INSERT INTO `usertable` (`userID`, `userName`, `password`, `userHiddenQ`, `userHiddenA`, `userFirstName`, `userLastName`, `sex`, `userDOB`, `userAddress`,	`userStreet`,	`userCity`, `userCountry`, `userZIP`, `userHomePhone`, `userWorkPhone`, `userMobilePhone`, `userJoinDate`, `userGroup`, `userStatus`, `userEmail`, `userLastLogin`, `userProfileStyle`, `userAvatar`)
 			VALUES (NULL, '$username', SHA1( '$password' ), '$hiddenQ', '$hiddenA', '$firstname', '$lastname', '$sex', '$dob', '$address', '$street', '$city', '$country', '$zip', '$home', '$work', '$mobile', NOW() , '1', '1', '$email', '0000-00-00 00:00:00', '$profile', '$avatar')";
 		$result = mysql_query($sql);
-
-		mysql_free_result($result);
 		mysql_close($conn);
+		mysql_free_result($result);
+		
 		
 		return $result;
 	}
@@ -374,7 +374,7 @@
 	
 	function messageCount($userID) {
 		$conn = databaseConnect();
-		$query = "SELECT `messageID` FROM `messagetable` WHERE `recieverID` = '$userID' AND `read` = 0";
+		$query = "SELECT `messageID` FROM `messagetable` WHERE `receiverID` = '$userID' AND `read` = 0";
 		$result = mysql_query($query, $conn) or die (mysql_error());
 		$count = mysql_num_rows($result);
 

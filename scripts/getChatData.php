@@ -6,12 +6,11 @@
 	header( "Pragma: no-cache" );
 	header("Content-Type: text/html; charset=utf-8");
 	
-	if (!$_GET[lastID]) {
-		$lastID = 0;
+	if (isset($_GET['lastID'])) {
+		$lastID = $_GET['lastID'];
 	} else {
-		$lastID = $_GET[lastID];
+		$lastID = 0;
 	}
-	
 	getData($lastID);
 	
 	function getData($lastID) {
@@ -25,7 +24,7 @@
 			$name = $row[1];
 			$text = $row[2];
 			$date = $row[3];
-			$color = $row[4];
+			//$color = $row[4];
 			$id = $row[0];
 			if ($name == '') {
 				$name = 'no name';
