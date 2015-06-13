@@ -64,9 +64,12 @@
 		}
 		
 		$start = ($currPage - 1) * $showLimit;
+		
+		//echo $currPage . '<br>' . $currStart . '<br>' . $currEnd . '<br>' . $numPages . '<br>' . $start . '<br>' . $showLimit;
+		//exit();
 	}
 
-	function drawPagination($begin, $end, $caller, $add=0) {
+	function drawPagination($begin, $end, $caller, $add=NULL) {
 		global $numArticles, $numPages, $currPage, $currStart, $catSub, $sortBy, $sortOrder, $showLimit, $searchText, $searchType;
 		echo "<table border='0' cellspacing='2' cellpadding='0' align='center'><tr>";
 		if ( $currPage > 1 ) {
@@ -82,6 +85,9 @@
 			} elseif ( $caller == "messages" ) {
 				echo "<td id='firstPage'><a href='messages.php?&".$add."&currPage=1&showLimit=$showLimit'>&nbsp;</a><td>";
 				echo "<td id='prevPage'><a href='messages.php?&".$add."&currPage="; echo ($currPage - 1); echo "&prevStart=$currStart&showLimit=$showLimit'>&nbsp;</a><td>";
+			} elseif ( $caller == "workarea" ) {
+				echo "<td id='firstPage'><a href='workarea.php?&".$add."&currPage=1&showLimit=$showLimit'>&nbsp;</a><td>";
+				echo "<td id='prevPage'><a href='workarea.php?&".$add."&currPage="; echo ($currPage - 1); echo "&prevStart=$currStart&showLimit=$showLimit'>&nbsp;</a><td>";
 			}
 		} else {
 			if ( $caller == "category" ) {
@@ -96,6 +102,9 @@
 			} elseif ( $caller == "messages" ) {
 				echo "<td id='firstPage'>&nbsp;<td>";
 				echo "<td id='prevPage'>&nbsp;<td>";
+			} else if($caller == "workarea" ) {
+				echo "<td id='firstPage'>&nbsp;<td>";
+				echo "<td id='prevPage'>&nbsp;<td>";
 			}
 		}
 		for ( $i = $begin; $i <= $end; $i++ ) {
@@ -108,6 +117,8 @@
 					echo "<td id='pagination'><a href='results.php?prevStart=$currStart&currPage=$i&showLimit=$showLimit&searchText=$searchText&searchType=$searchType'>$i</a></td>";
 				} elseif ( $caller == "messages" ) {
 					echo "<td id='pagination'><a href='messages.php?".$add."&prevStart=$currStart&currPage=$i&showLimit=$showLimit'>$i</a></td>";
+				} elseif ( $caller == "workarea" ) {
+					echo "<td id='pagination'><a href='workarea.php?".$add."&prevStart=$currStart&currPage=$i&showLimit=$showLimit'>$i</a></td>";
 				}
 			} else {
 				if ( $caller == "category" ) {
@@ -117,6 +128,8 @@
 				} elseif ( $caller == "results" ) {
 					echo "<td id='currNumber'>$i</td>";
 				} elseif ( $caller == "messages" ) {
+					echo "<td id='currNumber'>$i</td>";
+				} elseif ( $caller == "workarea" ) {
 					echo "<td id='currNumber'>$i</td>";
 				}
 			}
@@ -134,6 +147,9 @@
 			} elseif ( $caller == "messages" ) {
 				echo "<td id='nextPage'><a href='messages.php?".$add."&currPage="; echo ($currPage + 1); echo "&prevStart=$currStart&showLimit=$showLimit'>&nbsp;</a><td>";
 				echo "<td id='lastPage'><a href='messages.php?".$add."&currPage=$numPages&showLimit=$showLimit'>&nbsp;</a><td>";
+			} elseif ( $caller == "workarea" ) {
+				echo "<td id='nextPage'><a href='workarea.php?".$add."&currPage="; echo ($currPage + 1); echo "&prevStart=$currStart&showLimit=$showLimit'>&nbsp;</a><td>";
+				echo "<td id='lastPage'><a href='workarea.php?".$add."&currPage=$numPages&showLimit=$showLimit'>&nbsp;</a><td>";
 			}
 		} else {
 			if ( $caller == "category" ) {
@@ -146,6 +162,9 @@
 				echo "<td id='nextPage'>&nbsp;<td>";
 				echo "<td id='lastPage'>&nbsp;<td>";
 			} elseif ( $caller == "messages" ) {
+				echo "<td id='nextPage'>&nbsp;<td>";
+				echo "<td id='lastPage'>&nbsp;<td>";
+			} elseif ( $caller == "workarea" ) {
 				echo "<td id='nextPage'>&nbsp;<td>";
 				echo "<td id='lastPage'>&nbsp;<td>";
 			}

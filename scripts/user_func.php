@@ -1,4 +1,79 @@
 <?php
+	function activationMail($username, $mail) {
+		$conn = databaseConnect();
+		
+		$rand = md5($username.mt_rand());
+		$sql = "INSERT INTO `confirmemail` (`username`, `randomText`) VALUES ('$username', '$rand')";
+		$result = mysql_query($sql, $conn);
+		
+		mysql_close($conn);
+		
+		if ($result == true) {
+			$header = "MIME-Version: 1.0 \n";
+			$header .= "Content-Type: multipart/alternative; boundary=\"==Multipart_Boundary_xc75j85x\"";
+			$subject = "Account Activation - www.voices.mv";
+			$msg = "This is a multi-part message in MIME format.\r\n
+
+--==Multipart_Boundary_xc75j85x
+Content-Type: text/plain; charset=\"iso-8859-1\"
+Content-Transfer-Encoding: 7bit
+
+Dear ".$username.".\r\n
+Thank you for registering at voices.mv.\r\n
+\r\n
+The purpose of this confirmation message is to verify that the email address you submitted is valid and reachable. We are working hard to keep the confirmation process as simple as possible.\r\n
+\r\n
+To complete your member registration, simply copy and paste the link below in your browser address bar:\r\n
+\r\n
+http://www.voices.mv/pages/accountActivate.php?xxx=$rand\r\n
+\r\n
+If you If you received this message but did not attempt to register, it means that someone may have entered your email address when registering with voices.mv, probably by mistake. If this is the case, you can safely disregardthis email -- no further action is required. We apologize for the intrusion.\r\n
+\r\n
+If you have any problems, please visit our contacts area so a customerservice representative can help you. http://www.voices.mv/home.php\r\n
+				
+--==Multipart_Boundary_xc75j85x
+Content-Type: text/html; charset=\"iso-8859-1\"
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head><title>A</title>
+<style type=\"text/css\">
+<!--
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0066FF;
+	font-weight: bold;
+}
+.orange {color: #FF6600}
+-->
+</style>
+</head>
+<body>
+<p>Dear ".$username.",</p>
+<p>Thank you for registering at <span class=\"orange\"><a href=\"http://www.voices.mv/pages/accountActivate.php?xxx=$rand\">voices.mv</a></span>.</p>
+<p>The purpose of this confirmation message is to verify that the email address you   submitted is valid and reachable. We are working hard to keep the confirmation   process as simple as possible.</p>
+<p>To complete your member registration, simply click on the following link (if the link cannot be clicked, copy and paste it in the browser address bar):</p>
+<p><a href=\"http://localhost/voices2008/pages/accountActivate.php?xxx=$rand\">CLICK HERE </a></p>
+<p>If you If you received this message but did not attempt to register, it means that someone may have entered your email address when registering with <span class=\"orange\">voices.mv</span>, probably by mistake. If this is the case, you can safely disregard this email -- no further action is required. We apologize for the intrusion.</p>
+<p> If you have any problems, please visit our contacts area so a customerservice representative can help you. <span class=\"orange\">http://2008.voices.mv/home.php</span>  <br />
+</p>
+</body>
+</html>
+--==Multipart_Boundary_xc75j85x--";
+			
+			$result = mail($mail, $subject, $msg, $header);
+		}
+		
+		return $result;
+	}
+	
 	function fetchPass($userID) {
 		$conn = databaseConnect();
 		
@@ -38,11 +113,10 @@
 		$conn = databaseConnect();
 		
 		$sql = "INSERT INTO `usertable` (`userID`, `userName`, `password`, `userHiddenQ`, `userHiddenA`, `userFirstName`, `userLastName`, `sex`, `userDOB`, `userAddress`,	`userStreet`,	`userCity`, `userCountry`, `userZIP`, `userHomePhone`, `userWorkPhone`, `userMobilePhone`, `userJoinDate`, `userGroup`, `userStatus`, `userEmail`, `userLastLogin`, `userProfileStyle`, `userAvatar`)
-			VALUES (NULL, '$username', SHA1( '$password' ), '$hiddenQ', '$hiddenA', '$firstname', '$lastname', '$sex', '$dob', '$address', '$street', '$city', '$country', '$zip', '$home', '$work', '$mobile', NOW() , '1', '1', '$email', '0000-00-00 00:00:00', '$profile', '$avatar')";
-		$result = mysql_query($sql);
-		mysql_close($conn);
-		mysql_free_result($result);
+			VALUES (NULL, '$username', SHA1( '$password' ), '$hiddenQ', '$hiddenA', '$firstname', '$lastname', '$sex', '$dob', '$address', '$street', '$city', '$country', '$zip', '$home', '$work', '$mobile', NOW() , '1', '0', '$email', '0000-00-00 00:00:00', '$profile', '$avatar')";
+		$result = mysql_query($sql, $conn);
 		
+		mysql_close($conn);
 		
 		return $result;
 	}
@@ -72,7 +146,6 @@
 			LIMIT 1";
 		$result = mysql_query($sql);
 
-		mysql_free_result($result);
 		mysql_close($conn);
 		
 		return $result;
@@ -139,12 +212,12 @@
 	function userSpotLight($userID) {
 		$conn = databaseConnect();
 
-		$query = "SELECT `userID`, `userName`, `groupName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `statusName`
+		$sql = "SELECT `userID`, `userName`, `groupName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `statusName`
 								FROM `usertable`, `grouptable`, `statustable`
 								WHERE `userID` = $userID
 									AND `usertable`.`usergroup` = `grouptable`.`groupID`
 									AND `usertable`.`userStatus` = `statustable`.`statusID`";
-		$result = mysql_query($query);
+		$result = mysql_query($sql);
 		$spotlight = mysql_fetch_array($result);
 
 		mysql_free_result($result);
@@ -206,8 +279,8 @@
 	function getUserProfile($userID) {
 		$conn = databaseConnect();
 		
-		$query = "SELECT `userProfileStyle` FROM `usertable` WHERE `userID` = $userID";
-		$result = mysql_query($query);
+		$sql = "SELECT `userProfileStyle` FROM `usertable` WHERE `userID` = $userID";
+		$result = mysql_query($sql);
 		$array = mysql_fetch_array($result);
 		$style = $array[0];
 		
@@ -227,7 +300,7 @@
 				break;
 
 			case 2:			/* show username and some personal info */
-				$query = "SELECT `userName`, `userFirstName`, `userLastName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `userEmail`
+				$query = "SELECT `userName`, `groupName`, `userFirstName`, `userLastName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `userEmail`
 										FROM `usertable`, `grouptable`, `statustable`
 										WHERE `userID` = $userID
 											AND `usertable`.`usergroup` = `grouptable`.`groupID`
@@ -237,7 +310,7 @@
 				break;
 
 			case 3:			/* whow location */
-				$query = "SELECT `userName`, `userFirstName`, `userLastName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `userEmail`, `userCountry`, `userCity`
+				$query = "SELECT `userName`, `groupName`, `userFirstName`, `userLastName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `userEmail`, `userCountry`, `userCity`
 										FROM `usertable`, `grouptable`, `statustable`
 										WHERE `userID` = $userID
 											AND `usertable`.`usergroup` = `grouptable`.`groupID`
@@ -247,7 +320,7 @@
 				break;
 
 			case 4:			/* whow contact Info */
-				$query = "SELECT `userName`, `userFirstName`, `userLastName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `userEmail`, `userHomePhone`, `userWorkPhone`, `userMobilePhone`, `userCountry`, `userCity`
+				$query = "SELECT `userName`, `groupName`, `userFirstName`, `userLastName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `userEmail`, `userHomePhone`, `userWorkPhone`, `userMobilePhone`, `userCountry`, `userCity`
 										FROM `usertable`, `grouptable`, `statustable`
 										WHERE `userID` = $userID
 											AND `usertable`.`usergroup` = `grouptable`.`groupID`
@@ -257,7 +330,7 @@
 				break;
 
 			case 5:			/* whow address */
-				$query = "SELECT `userName`, `userFirstName`, `userLastName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `userEmail`, `userHomePhone`, `userWorkPhone`, `userMobilePhone`, `userAddress`, `userStreet`, `userZIP`, `userCountry`, `userCity`
+				$query = "SELECT `userName`, `groupName`, `userFirstName`, `userLastName`, `userAvatar`, UNIX_TIMESTAMP(userDOB) AS `userDOB`, UNIX_TIMESTAMP(userJoinDate) AS `userJoinDate`, `userEmail`, `userHomePhone`, `userWorkPhone`, `userMobilePhone`, `userAddress`, `userStreet`, `userZIP`, `userCountry`, `userCity`
 										FROM `usertable`, `grouptable`, `statustable`
 										WHERE `userID` = $userID
 											AND `usertable`.`usergroup` = `grouptable`.`groupID`
@@ -267,31 +340,95 @@
 				break;
 		}
 		
-		drawUserProfile($userID, $array);
+		drawUserProfile($userID, $array, $style);
 				
 		mysql_free_result($result);
 		mysql_close($conn);
 	}
 	
-	function drawUserProfile($userID, $userProfile) {
-		echo "<table border='0' cellpadding='0' cellspacing='0'>
+	function drawUserProfile($userID, $userProfile, $style) {
+		echo "<table width='100%' border='0' cellpadding='0' cellspacing='0'>
 			<tr>
-				<td><img width='100' height='100' src='images/avatars/".$userProfile['userAvatar']."' /></td>
-				<td><table border='0' cellpadding='0' cellspacing='0'>
-					<tr>
-						<td>Username: </td>
-						<td>".$userProfile['userName']."</td>
-					</tr><tr>
-						<td>First Name: </td>
-						<td>".$userProfile['userFirstName']."</td>
-					</tr>
-					</tr><tr>
-						<td>Last Name: </td>
-						<td>".$userProfile['userLastName']."</td>
-					</tr>
-				</table></td>
-			</tr>
-		</table>";
+				<td id='bigUsername' colspan='2'>".$userProfile['userName']."'s Profile</td>
+			</tr><tr>
+				<td colspan='2'><hr /></td>
+			</tr><tr>
+				<td colspan='2'>
+					<table width='100%' cellpadding='0' cellspacing='0' border='0'>
+						<tr>
+							<td valign='top'>
+								Group: ".$userProfile['groupName']."<br />
+								Joined On: "; echo printDate($userProfile['userJoinDate'], "d-M-y | H:i")."
+							</td>
+							<td id='avatarPic'>
+								<img width='100' height='100' src='images/avatars/".$userProfile['userAvatar']."' />
+							</td>
+						</tr><tr>
+							<td>&nbsp;</td>
+							<td id='blackButton'><a href='#'>Add As Friend</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr><tr>
+				<td>
+					<table cellspacing='0' cellpadding='0' border='0'>
+						<tr>
+							<td id='componentNameContentBlack'>PERSONAL INFORMATION: <a id=\"personal_InfoLink\" onclick=\"componentHide('personal_Info')\"></a></td>
+							<td id='componentNameContentBlack'>LOCATION: <a id=\"locationLink\" onclick=\"componentHide('location')\"></a></td>
+						</tr><tr>
+							<td id='info_container'>";
+								if ( $style > 1 ) {
+									echo "<div id='personal_Info'>
+										First Name: ".$userProfile['userFirstName']."<br />
+										Last Name: ".$userProfile['userLastName']."<br />
+										Birth Day: "; echo printDate($userProfile['userDOB'])."<br />
+										Email: ".$userProfile['userEmail']."<br />
+									</div>";
+								} else {
+									echo "Cannot display this information";
+								}
+							echo "</td>
+							<td id='info_container'>";
+								if ( $style > 2 ) {
+									echo "<div id='location'>
+											City: ".$userProfile['userCity']."<br />
+											Country: ".$userProfile['userCountry']."<br />
+									</div>";
+								} else {
+									echo "Cannot display this information";
+								}
+							echo "</td>
+						</tr><tr>
+							<td id='componentNameContentBlack'>CONTACT INFORMATION: <a id=\"contact_InfoLink\" onclick=\"componentHide('contact_Info')\"></a></td>
+							<td id='componentNameContentBlack'>ADDRESS: <a id=\"addressLink\" onclick=\"componentHide('address')\"></a></td>
+						</td><tr>
+							<td id='info_container'>";
+								if ( $style > 3 ) {
+									echo "<div id='contact_Info'>
+										Home Phone: ".$userProfile['userHomePhone']."<br />
+										Work Phone: ".$userProfile['userWorkPhone']."<br />
+										Mobile Phone: ".$userProfile['userMobilePhone']."<br />
+									</div>";
+								} else {
+									echo "Cannot display this information";
+								}
+							echo "</td>
+							<td id='info_container'>";
+								if ( $style > 4 ) {
+									echo "<div id='address'>
+										Address: ".$userProfile['userAddress']."<br />
+										Street: ".$userProfile['userStreet']."<br />
+										ZIP: ".$userProfile['userZIP']."<br />
+									</div>";
+								} else {
+									echo "Cannot display this information";
+								}
+							echo "</td>
+						</tr>
+					</table>
+				</td>
+			</tr>";
+		echo "</table>";
 	}
 	
 	function getuserDetails($user, $by = "userID") {
@@ -348,8 +485,7 @@
 		if (mysql_num_rows($result) == 1) {
 			$sql = "UPDATE `usertable` SET `userLastLogin` = NOW() WHERE `usertable`.`userID` = ".$array['userID']." LIMIT 1";
 			$result = mysql_query($sql);
-	
-			mysql_free_result ($result);
+			
 			mysql_close($conn);
 
 			return $array['userName'];
@@ -386,5 +522,46 @@
 		} else {
 			return	"<span style='color:#FF0000'>(".$count." unread)</span>";
 		}
+	}
+	
+	function getArticlesByUser($userID) {
+		global $start, $showLimit;
+		
+		$conn = databaseConnect();
+		$sql = "SELECT DISTINCT `articleID`, `articleTitle`, `articleSummary`, `catSubID`, `catSubName`, `catMainName` FROM `articletable`, `catsubtable`, `catmaintable` WHERE `userID` = $userID AND `articletable`.`articleSubCat` = `catsubtable`.`catSubID` AND `articleStatus` = 1 AND `catsubtable`.`catMainID` = `catmaintable`.`catMainID`";
+		$result = mysql_query($sql);
+		
+		$count = mysql_num_rows($result);
+		
+		echo "<table width='100%' border='0' cellspacing='0' cellpadding='0'>";
+		if ( $count > 0 ) {
+			for ( $i=0; $i < $count; ++$i ) {
+				$array = mysql_fetch_array($result);
+				echo "<tr>";
+				echo "<td id='articleTitle_profile'><a href='articles.php?articleID=".$array['articleID']."'>".$array['articleTitle']."</a></td>";
+				echo "<td rowspan='3' id='articlePicProfile_Container'>
+					<table border='0' cellspacing='0' cellpadding='0'>
+						<tr>
+							<td id='articlePicProfile_Left'>&nbsp;</td>
+							<td><img src='images/articlePics/".$array['articleID']."/".$array['articleID']."_thumb.jpg' width='54' height='54' /></td>
+						</tr><tr>
+							<td id='articlePicProfile_Corner'>&nbsp;</td>
+							<td id='articlePicProfile_Bottom'>&nbsp;</td>
+						</tr>
+					</table></td>";
+				echo "</tr>";
+
+				echo "<tr>";
+				echo "<td id='articleCategory_profile'><a href='category.php?catSub=".$array['catSubID']."'>".$array['catMainName']."|".$array['catSubName']."</a></td>";
+				echo "</tr>";
+				
+				echo "<tr>";
+				echo "<td id='articleSummary_profile'>".$array['articleSummary']."</td>";
+				echo "</tr>";
+			}
+		} else {
+			echo "<tr><td id='notice_neutral'>no articles</td></tr>";
+		}
+		echo "</table>";
 	}
 ?>

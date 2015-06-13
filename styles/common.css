@@ -18,6 +18,15 @@ body {
 	font-variant: normal;
 	text-transform: none;
 }
+#normalTextRight {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: right;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	width: 200px;
+}
 #inputText {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
@@ -28,6 +37,15 @@ body {
 	color: #333333;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	cursor: default;
+}
+#boldBlackText a {
+	color: #FF9900;
+	text-decoration: none;
 }
 #boldBlueText {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -549,8 +567,7 @@ body {
 	border: 1px solid #CCCCCC;
 }
 #resultContainer {
-	padding-left: 10px;
-
+	padding: 10px;
 }
 #cornerBL4 {
 	background-image: url(../images/corners_and_lines/Corner_Left_Bottom_4.jpg);
@@ -663,11 +680,13 @@ body {
 #smallGreyText a {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
-	color: #666666;
+	color: #0033FF;
 	text-decoration: none;
+	font-weight: bold;
 }
 #smallGreyText  a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #333333;
 }
 #smallGreenText {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -705,6 +724,30 @@ body {
 	border: 1px solid #DD3C10;
 	padding: 4px;
 }
+#notice_bad a {
+	color: #FF0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+#notice_bad a:hover {
+	color: #333333;
+}
+.notice_bad {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: center;
+	background-color: #FFEBE8;
+	border: 1px solid #DD3C10;
+	padding: 4px;
+}
+.article_bad {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #999999;
+	padding: 4px;
+}
 #notice_good {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
@@ -723,6 +766,14 @@ body {
 	border: 1px solid #DEAB10;
 	padding: 4px;
 	font-weight: bold;
+}
+#notice_neutral a {
+	color: #FF0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+#notice_neutral a:hover {
+	color: #333333;
 }
 #blackButton {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -748,10 +799,16 @@ body {
 	cursor: default;
 }
 #blackButton a {
+	color: #FF9900;
+	text-decoration: none;	
+}
+#blackButton a {
 	color: #FFFFFF;
 	background-image: url(../images/blackButton.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
+	text-align: center;
+	vertical-align: middle;
 	text-decoration: none;
 	display: block;
 	cursor: auto;
@@ -790,4 +847,88 @@ body {
 #avatarPic {
 	height: 100px;
 	width: 100px;
+}
+#editButton {
+	background-color: #FFFFFF;
+	background-image: url(../images/workareaImages/edit_icon.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 20px;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	vertical-align: middle;
+	font-weight: bold;
+	border: thin solid #FF6600;
+}
+#editButton:hover {
+	background-color: #FFFFFF;
+	color: #FF6600;
+}
+#unfinishedButton {
+	background-color: #FFFFFF;
+	background-image: url(../images/workareaImages/unfinished_icon.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 20px;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	vertical-align: middle;
+	font-weight: bold;
+	border: thin solid #FF6600;
+}
+#unfinishedButton:hover {
+	background-color: #FFFFFF;
+	color: #FF6600;
+}
+#publishButton {
+	background-color: #FFFFFF;
+	background-image: url(../images/workareaImages/publish_icon.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 20px;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	vertical-align: middle;
+	font-weight: bold;
+	border: thin solid #FF6600;
+}
+#publishButton:hover {
+	background-color: #FFFFFF;
+	color: #FF6600;
+}
+#deleteButton {
+	background-color: #FFFFFF;
+	background-image: url(../images/workareaImages/delete_icon.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 20px;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	vertical-align: middle;
+	font-weight: bold;
+	border: thin solid #FF6600;
+}
+#deleteButton:hover {
+	background-color: #FFFFFF;
+	color: #FF6600;
 }
